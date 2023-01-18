@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Emp o-- Address :Aggregation
+
+class Emp{
+int id;
+String name;
+Address address;
+__
+Emp( id , name, address)
+__
+{method} void display
+{method} main
+Address =  new address1
+Address =  new address2
+Emp e = new Emp
+Emp e2 = new Emp
+
+e.display()
+e2.display()
+
+
+}
+
+class Address
+{
+String city, state, country
+Address(city, state, country)
+}
+@enduml

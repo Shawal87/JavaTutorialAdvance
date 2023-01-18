@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Bank <-- SBI
+Bank <-- ICIC
+Bank <-- AXIS
+
+class Bank
+{
+{method} getRateOfInterest(): float
+}
+
+class SBI
+{
+{method}getRateOfInterest(): float
+}
+
+class ICIC
+{
+{method}getRateOfInterest(): float
+}
+
+class AXIS
+{
+{method}getRateOfInterest(): float
+}
+
+
+
+@enduml
